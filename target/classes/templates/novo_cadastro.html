@@ -10,30 +10,30 @@
 </head>
 <body>
 <div class="container">
-    <h1>Gerenciamento de Cadastro</h1>
+    <h1>Gerenciamento de Ocorrências</h1>
     <hr>
-    <h2>Salvar Cadastro</h2>
+    <h2>Salvar Ocorrências</h2>
 
     <form action="#" th:action="@{/saveCadastro}" th:object="${cadastro}"
           method="POST">
         <input type="text" th:field="*{nome}"
-               placeholder="Primeiro Nome" class="form-control mb-4 col-4">
+               placeholder="Nome Completo" class="form-control mb-4 col-4">
 
         <input type="text" th:field="*{sobrenome}"
-               placeholder="Sobrenome" class="form-control mb-4 col-4">
+               placeholder="Ocorrência" class="form-control mb-4 col-4">
 
         <input type="text" th:field="*{email}"
-               placeholder="Email de Cadastro" class="form-control mb-4 col-4">
+               placeholder="Email para contato" class="form-control mb-4 col-4">
 
         <input type="text" th:field="*{senha}"
-               placeholder="Senha de Cadastro" class="form-control mb-4 col-4">
+               placeholder="CEP" class="form-control mb-4 col-4">
 
-        <button type="submit" class="btn btn-info col-2"> Salvar Cadastro</button>
+        <button type="submit" class="btn btn-info col-2"> Salvar Ocorrência</button>
     </form>
 
     <hr>
 
-    <a th:href = "@{/IndexCadastro}"> Voltar para a lista de Cadastro</a>
+    <a th:href = "@{/IndexCadastro}"> Voltar para a lista de Ocorrências</a>
 </div>
 </body>
 </html>

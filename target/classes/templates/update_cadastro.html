@@ -11,9 +11,9 @@
 <body>
 
 <div class="container">
-  <h1>Atualizar Cadastro</h1>
+  <h1>Atualizar Ocorrências</h1>
   <hr>
-  <h2>Atualizar Cadastro</h2>
+  <h2>Atualizar Ocorrências</h2>
 
   <form action="#" th:action="@{/saveCadastro}" th:object="${cadastro}"
         method="POST">
@@ -28,12 +28,12 @@
 
     <input type="text" th:field="*{senha}" class="form-control mb-4 col-4">
 
-    <button type="submit" class="btn btn-info col-2"> Atualizar Cadastro</button>
+    <button type="submit" class="btn btn-info col-2"> Atualizar Ocorrência</button>
   </form>
 
   <hr>
 
-  <a th:href = "@{/IndexCadastro}"> Voltar para a lista de Cadastro</a>
+  <a th:href = "@{/IndexCadastro}"> Voltar para a lista de Ocorrências</a>
 </div>
 
 </body>
